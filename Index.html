@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="text/html, width=device-width,initial-scale=1.0"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link href="style2.css" rel="stylesheet" type="text/css"/>
+<title>Learn Java</title>
+</head>
+<body>
+<header>
+<nav>
+<div class="w3-container w3-top w3-left">
+<div class="w3-bar w3-gray w3-card w3-large">
+<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large w3-gray" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+<a href="Index.html" class="w3-bar-item w3-button w3-padding-large w3-teal">Home</a>
+<div class="w3-dropdown-hover">
+<button class="w3-bar-item w3-button w3-card w3-padding-large">Getting Started</button>
+<div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="start1.html" class="w3-bar-item w3-button">Download and Installation Guide</a>
+      <a href="start2.html" class="w3-bar-item w3-button">Best Java IDE’s</a>
+      <a href="start3.html" class="w3-bar-item w3-button">OS Dependency</a></div></div>
+<a href="basics.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-card-4">The Basics</a>
+<a href="tutorials.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-card-4">Java Tutorials</a>
+<a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-card-4">About</a>
+</div><div class="searchbox">
+<form action="/action_page.php" method="GET">
+<input type="text" placeholder="Search..."id="searchbox" onkeyup="myFunction()">
+</form></div></div>
+<div class="sidebar-nav">
+  <a class="active" href="#about">About</a>
+  <a href="start1.html">Download and Installation Guide</a>
+  <a href="start2.html">Best Java IDE’s</a>
+  <a href="keyconcepts.html">Key Object-Oriented Programming Concepts</a>
+  <a href="codeconventions.html">Code Conventions</a>
+  <a href="libs.html">Core Libraries</a>
+  <a href="examples.html">Example Code</a>
+  <a href="programs.html">Basic Java Programs</a>
+</div>
+</nav>
+</header>
+<main>
+<h1 style="padding-top:180px; color:white;">FUNDAMENTALS OF JAVA</h1>
+<p style="letter-spacing:3px;width:auto;height:auto;font-size:20px;text-overflow:ellipsis;">
+This Website Covers Basic Object-Oriented Programming Concepts in Java</p><br><br><br><br>
+<h3 style="hr-text; color:teal; font-size:30px;letter-spacing:2px;">WELCOME</h3>
+<p>Here you can find material to learn basic java concepts and explore example programs.<br>
+For those interested in increasing their <em><strong>value</em></strong> to an employer, or getting their foot 
+in the door in the programming field - look no further!<br> Students can also use this site 
+for help with CSS class assignments!</p></div><br>
+<hr><h1 style="hr-text; color:teal; letter-spacing:2px;">Main Features</h1><hr>
+<div class="w3-container w3-float-left w3-display-inline-block">
+<div class="w3-third w3-center w3-container">
+<img style="-webkit-user-select:none;margin:auto;" src="circle1.png" alt="circle1"/>
+<ul class="w3-ul w3-container">
+<li><h3 style="color:teal;">Feature 1: Getting Started</h3></li>
+<li><a href="start1.html" style="text-decoration:none;color:white;">Download and Installation Guide</a></li>
+<li><a href="start2.html" style="text-decoration:none;color:white;">Best Java IDE’s</a></li>
+<li><a href="start3.html" style="text-decoration:none;color:white;">OS Dependency Guide</a></li>
+</ul></div><br><br>
+<div class="w3-third w3-center w3-container">
+<img style="-webkit-user-select:none;margin:auto;" src="circle1.png" alt="circle2"/>
+<ul class="w3-ul w3-container">
+<li><h3 style="color:teal;">Feature 2: The Basics</h3></li>
+<li><a href="keyconcepts.html" style="text-decoration:none; color:white;">Key Object-Oriented Programming Concepts</a></li>
+<li><a href="codeconventions.html" style="text-decoration:none; color:white;">Java Code Conventions</a></li>
+<li><a href="libs.html" style="text-decoration:none;color:white;">Core Libraries</a></li>
+<li><a href="examples.html" style="text-decoration:none;color:white;">Java Example Code</a></li>
+<li><a href="jdk.html" style="text-decoration:none;color:white;">Modular JDK</a></li>
+</ul></div><br><br>
+<div class="w3-third w3-container w3-center">
+<img style="-webkit-user-select:none;margin:auto;" src="circle1.png" alt="circle3"/>
+<ul class="w3-ul w3-container">
+<li><h3 style="color:teal;">Feature 3: Tutorials</h3></li>
+<li><a href="application.html" style="text-decoration:none;color:white;">Applying What You Learned</a></li>
+<li><a href="programs.html" style="text-decoration:none;color:white;">Basic Java Programs</a></li>
+</ul></div>
+</div>
+</main>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchbox");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<br>
+<footer>
+<div class="w3-container w3-black">
+<hr style="height:1.6px;border-width:.8px;color:black;background-color:teal">
+<span style="line-height:1px;">@author: Alex Shields-Weber<br>@version: 5 November 2020<br><br></span>
+</div></footer>
+</div>
+</body>
+</html> 
